@@ -1,0 +1,134 @@
+.header{
+    margin: auto;
+    font-size: 30px;
+    width: 410px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+}
+
+#root1{
+    margin-top: 20px;
+}
+
+.deleteTask {
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.deleteTask:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.addBtn{
+    margin-left: 5px;
+    height: 30px;
+    width: 60px;;
+}
+  
+.addBtn:hover {
+    background-color: green;
+    color: white;
+}
+
+.delete-completed-task-button {
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+}
+
+.delete-completed-task-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.toggleStatusBox:checked + span {
+    color:  rgb(5, 167, 19);
+    text-decoration: line-through;
+}
+
+.main{
+    margin: auto;
+    border-style: solid;
+    max-height: 410px;
+    width: 410px;
+    border-radius: 5px;
+    background-image: url(/To-Do_WebApp-KK/images/App-background.jpg);
+}
+
+.inputField {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.inputContainer{
+    margin: auto;
+    padding:7px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.storageDropdown {
+    margin-left: 20px;
+    padding: 5px;
+    border-style: solid;
+}
+
+.todoList{
+    overflow-y: auto;
+    max-height: 230px;
+    padding-left: 1px ;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.todoList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.todoList .listItem {
+    position: relative;
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+   
+.taskCount{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    width: 750px;
+    border-bottom:  solid ;
+}
+
+.toggleStatusBox{
+    transform:scale(2);
+    margin:10px;
+    border-radius: 50%;
+}
+
+.listItem:hover .deleteTask{
+    visibility: visible;
+}
+
+.listItem:not(:last-child) {
+	border-bottom: 1px solid solid ;
+}

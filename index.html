@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <div id="root1">
+    </div>
+</body>
+
+<script src="src/dataSource.js" type="text/javascript"></script>
+<script src="src/abstractDataSource.js" type="text/javascript"></script>
+<script src="utility/polyfill.js" type="text/javascript"></script>
+<script src="src/view.js" type="text/javascript"></script>
+<script src="src/app.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function () {
+        function Todo(storageKey, rootElementId) {
+            appModule.instance(new viewModule.instance(rootElementId),dataSourceModule.instance(storageKey)).init();
+        }
+        new Todo("myStorage", '#root');
+        new Todo("todoKK19", '#root1');
+    })();
+</script>
+
+</html>
